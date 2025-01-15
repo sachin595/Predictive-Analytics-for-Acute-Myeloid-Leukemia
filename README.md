@@ -31,9 +31,9 @@
 
 ## Introduction
 
-This project focuses on developing advanced predictive analytics for **Acute Myeloid Leukemia (AML)** by utilizing a **Long Short-Term Memory (LSTM)** neural network. The model is designed to predict two key health metrics: **Crude Mortality Rate** (number of deaths per 100,000 individuals in a given year) and **Survival Rate** (likelihood of survival as a percentage). By leveraging demographic and temporal factors such as **age, sex, ethnicity, race, and year,** the model provides robust insights into health outcomes.
+**Acute Myeloid Leukemia (AML)** is a fast-progressing blood cancer with significant challenges in predicting outcomes. This project employs an LSTM neural network to forecast two key health metrics: **Crude Mortality Rate** (deaths per 100,000 individuals) and** Survival Rate (likelihood of survival)**. Using demographic and temporal factors like **age, sex, ethnicity, race, and year,** the model captures trends and patterns often missed by traditional methods.
 
-Additionally, an interactive **diagnostic tool** has been deployed, allowing users to input specific demographic and temporal details to generate predictions. This tool serves as a practical application of the model, aiding researchers and healthcare professionals in assessing trends and disparities in **Acute Myeloid Leukemia** outcomes. The project emphasizes precision and temporal modeling to support informed decision-making in public health and oncology.
+The LSTM model excels in analyzing **time-series data**, recognizing long-term dependencies critical for understanding **AML** outcomes. Additionally, an **interactive Streamlit diagnostic tool** enables users to input patient data and receive **real-time predictions**, offering practical insights for healthcare professionals. By integrating advanced analytics with accessible tools, this project supports data-driven decisions to enhance AML research, policy, and care outcomes.
 
 ---
 

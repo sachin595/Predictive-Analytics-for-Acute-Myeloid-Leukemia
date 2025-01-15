@@ -31,7 +31,7 @@
 
 ## Introduction
 
-This project focuses on developing advanced predictive analytics for **Acute Myeloid Leukemia (ALL)** by utilizing a **Long Short-Term Memory (LSTM)** neural network. The model is designed to predict two key health metrics: **Crude Mortality Rate** (number of deaths per 100,000 individuals in a given year) and **Survival Rate** (likelihood of survival as a percentage). By leveraging demographic and temporal factors such as **age, sex, ethnicity, race, and year,** the model provides robust insights into health outcomes.
+This project focuses on developing advanced predictive analytics for **Acute Myeloid Leukemia (AML)** by utilizing a **Long Short-Term Memory (LSTM)** neural network. The model is designed to predict two key health metrics: **Crude Mortality Rate** (number of deaths per 100,000 individuals in a given year) and **Survival Rate** (likelihood of survival as a percentage). By leveraging demographic and temporal factors such as **age, sex, ethnicity, race, and year,** the model provides robust insights into health outcomes.
 
 Additionally, an interactive **diagnostic tool** has been deployed, allowing users to input specific demographic and temporal details to generate predictions. This tool serves as a practical application of the model, aiding researchers and healthcare professionals in assessing trends and disparities in **Acute Myeloid Leukemia** outcomes. The project emphasizes precision and temporal modeling to support informed decision-making in public health and oncology.
 
@@ -91,11 +91,11 @@ Accessing the CDC WONDER Database: The data collection began by navigating to th
 ## Algorithm Selection
 
 ### Rationale for Selecting LSTM
-The choice of using a Long Short-Term Memory (LSTM) neural network for predicting crude rates in Acute Myeloid Leukemia (ALL) was driven by the inherent capability of LSTM models to capture temporal dependencies and long-term relationships in sequential data. Traditional machine learning models, such as linear regression or decision trees, often struggle with time series data due to their limited ability to account for temporal order and dependencies.
+The choice of using a Long Short-Term Memory (LSTM) neural network for predicting crude rates in Acute Myeloid Leukemia (AML) was driven by the inherent capability of LSTM models to capture temporal dependencies and long-term relationships in sequential data. Traditional machine learning models, such as linear regression or decision trees, often struggle with time series data due to their limited ability to account for temporal order and dependencies.
 
 LSTM networks, a specialized form of Recurrent Neural Networks (RNNs), are explicitly designed to handle sequences of data. They incorporate memory cells that can maintain information over extended time intervals, effectively addressing the vanishing gradient problem commonly encountered in standard RNNs. This allows LSTMs to retain and utilize historical information, which is crucial in medical datasets where past events and trends significantly influence future outcomes.
 
-#### In the Context of Predicting Crude Rates for ALL, the LSTM Network's Ability to:
+#### In the Context of Predicting Crude Rates for AML, the LSTM Network's Ability to:
 1. **Retain Long-Term Dependencies**: 
    By maintaining cell states over time, LSTM networks can capture and leverage long-term dependencies in the data, such as historical trends in mortality rates, advancements in medical treatments, and changes in diagnostic practices.
 
@@ -108,7 +108,7 @@ LSTM networks, a specialized form of Recurrent Neural Networks (RNNs), are expli
 #### Creating Sequences
 - The data was transformed into sequences to capture the temporal relationships. Each sequence included a set of past observations (e.g., 20 time steps) to predict the next value. This approach ensures that the model can leverage historical information to make accurate predictions about future crude rates.
 
-- These technical advantages of LSTM networks make them particularly well-suited for our objective of predicting crude rates in ALL, where capturing and modeling temporal dynamics is essential for accurate forecasting. Consequently, the LSTM model was chosen as the primary algorithm for this study, ensuring that the temporal aspect of the data is adequately addressed, leading to more reliable and insightful predictions.
+- These technical advantages of LSTM networks make them particularly well-suited for our objective of predicting crude rates in AML, where capturing and modeling temporal dynamics is essential for accurate forecasting. Consequently, the LSTM model was chosen as the primary algorithm for this study, ensuring that the temporal aspect of the data is adequately addressed, leading to more reliable and insightful predictions.
 
 
 ## Model Architecture

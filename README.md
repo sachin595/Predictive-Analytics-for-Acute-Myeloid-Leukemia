@@ -144,7 +144,7 @@ The project includes a Streamlit-based diagnostic tool that allows users to inpu
 
 - Access the tool here: [Acute Myeloid Leukemia Diagnostic Tool](https://acute-myeloid-leukemia-lstm.streamlit.app/)
 - ### Example Output
-![Diagnostic Tool Screenshot](ALL_result.png)
+![Diagnostic Tool Screenshot](AML_result.png)
 
 ---
 ## License
